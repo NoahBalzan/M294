@@ -124,3 +124,49 @@ body {
   font-family: "Oswald", sans-serif;
   font-family: "Poppins", sans-serif;
 }
+
+/* fallback */
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 100 700;
+  src: url(./../fonts/material_symbol_outline.woff2) format("woff2");
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+.centered{
+  position:absolute;
+  background-color: gray;
+  width:200px;
+  height:200px;
+  left:50%;
+  top:50%;
+  margin-left:-100px;
+  margin-top:-100px;
+  box-shadow: 10px 20px 15px silver;
+}
+
+.small{
+  position: absolute;
+  background-color: blue;
+  width: 75px;
+  height: 75px;
+  left: 54%;
+  top: 58%;
+  box-shadow: 10px 20px 15px silver;
+}
