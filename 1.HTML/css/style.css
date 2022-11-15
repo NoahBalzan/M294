@@ -1,0 +1,20 @@
+.footer {
+  background-color: blue;
+  border-radius: 10px;
+  min-height: 20px;
+  display: flex;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-content: stretch;
+}
+
+.normal {
+  background-color: grey;
+  min-width: 250px;
+  min-height: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
