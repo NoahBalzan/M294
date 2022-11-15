@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <div id="meins">Text</div>
+
+    <script>
+      "use strict";
+
+      console.log("log");
+      console.error("error");
+      console.warn("warn");
+      console.info("info");
+      //alert('alert');
+
+      //Text verändern
+      document.getElementById("meins").innerHTML = "Neuer Text";
+      document.write("<br>HHHHHHHH");
+
+      //Variablen
+      let a;
+      var b = 5;
+      const c = 7;
+
+      var h = "X";
+      console.log(b + h);
+
+      var u = 0;
+      u += 1;
+      console.log(u);
+
+      //Object
+      var obj = { name: "Hans", alter: 88 };
+      console.log(obj.name);
+
+      //Arrays
+      var arr = [1, 2, 3, 4, 5];
+      console.log(arr[2]);
+      arr.push(20);
+      console.log(arr[5]);
+
+      //Funktionen
+      function f1(num1, num2) {
+        console.log("f1 " + num1 + num2);
+      }
+
+      f1(3, 5);
+
+      //String
+      var str = "Heiri's Sauerkraut";
+      console.log(str.slice(2, 7)); //Start- bis Endindex (immer exklusive Endindex)
+      //substr(start, length)
+      console.log(str.substr(2, 7));
+      //substring(start, end)
+      console.log(str.substring(2, 7));
+
+      console.log(str.toLowerCase());
+      console.log(str.toUpperCase());
+      console.log(str.replace("Heiri", "Hans"));
+      console.log(str.indexOf("Sauerkraut"));
+
+      let name = "Baba";
+      let alter = 88;
+      //Spezielle Anführungszeichen shift+`
+      console.log(`Hallo ${name} du bist ${alter} Jahre alt`);
+
+      //template literals
+      let tags = ["template literals", "es6", "javascript"];
+      for (let tag of tags) {
+        console.log(tag);
+      }
+
+      console.log(tags[0]);
+      tags.sort();
+      console.log(tags[0]);
+      tags.reverse();
+      console.log(tags[0]);
+
+      tags.forEach((element) => {
+        console.log(element);
+      });
+
+      let car = { car: "Honda", model: "Civic", year: 1998 };
+
+      Object.entries(car).forEach((element) => {
+        const [key, value] = element;
+        console.log(key, value);
+      });
+
+      //Callback???
+      function myDisplayer(some) {
+        console.log(some);
+      }
+
+      function myCalculator(num1, num2, myCallback) {
+        let sum = num1 + num2;
+        myCallback(sum);
+      }
+
+      myCalculator(5, 5, myDisplayer);
+    </script>
+  </body>
+</html>
