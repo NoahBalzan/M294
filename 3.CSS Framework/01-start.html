@@ -32,7 +32,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/materialize.min.css" />
     <!--CSS File-->
-    <link rel="stylesheet" href="css/index.css" />
+    <!-- <link rel="stylesheet" href="css/index.css" /> -->
     <!--JQuery-->
     <script src="js/jQuery.js"></script>
     <!-- Compiled and minified JavaScript -->
@@ -40,8 +40,91 @@
     <!--JS File-->
     <script src="js/index.js"></script>
 
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <table id="datatable" class="grey">
+      <thead class="orange">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Kraftstoff</th>
+          <th>Farbe</th>
+          <th>Bauart</th>
+          <th>Betankungen</th>
+          <th>Datum</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-id="1">
+          <td>1</td>
+          <td>Passat</td>
+          <td>Diesel</td>
+          <td><span class="color" style="background-color: #000000;"> #000000</span></td>
+          <td>Limousine</td>
+          <td>0</td>
+          <td class="datepicker">2019-08-07</td>
+          <td>
+            <span class="tank material-icons-outlined blue-text"> directions_car_filled </span>
+            <span class="edit material-icons-outlined green-text"> edit </span>
+            <span class="delete material-icons-outlined red-text"> delete_forever </span>
+          </td>
+        </tr>
+        <tr data-id="2">
+          <td>2</td>
+          <td>Honda</td>
+          <td>Benzin</td>
+          <td><span class="color" style="background-color: #000000;"> #000000</span></td>
+          <td>Bus</td>
+          <td>0</td>
+          <td class="datepicker">2019-08-07</td>
+          <td>
+            <span class="tank material-icons-outlined blue-text"> directions_car_filled </span>
+            <span class="edit material-icons-outlined green-text"> edit </span>
+            <span class="delete material-icons-outlined red-text"> delete_forever </span>
+          </td>
+        </tr>
+        <tr data-id="3">
+          <td>3</td>
+          <td>Opel</td>
+          <td>Elektro</td>
+          <td><span class="color" style="background-color: #000000;"> #000000</span></td>
+          <td>SUV</td>
+          <td>0</td>
+          <td class="datepicker">2019-08-07</td>
+          <td>
+            <span class="tank material-icons-outlined blue-text"> directions_car_filled </span>
+            <span class="edit material-icons-outlined green-text"> edit </span>
+            <span class="delete material-icons-outlined red-text"> delete_forever </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
     <p class="green lighten-4 red-text text-darken-3">Text</p>
+    <hr />
+
+    <!--Materialize Grid-->
+    <!--Bildschirm in 12 geteilt (l2 offset-l5: 12 - 2 = 10 / 2 = 5)-->
+    <div class="row">
+      <div
+        class="col s6 offset-s3 m4 offset-m4 l2 offset-l5 indigo center z-depth-3"
+      >
+        Offset Text
+      </div>
+      <div class="col s12"><hr /></div>
+      <div class="col s6 m6 l2 pink">1</div>
+      <div class="col s6 m4 l2 red">2</div>
+      <div class="col s6 m4 l2 orange">3</div>
+      <div class="col s6 m4 l2 yellow">4</div>
+      <div class="col s6 m4 l2 green">5</div>
+      <div class="col s6 m4 l2 purple">6</div>
+      <div class="col s6 m4 l2 blue">7</div>
+      <div class="col s6 m4 l2 grey">8</div>
+    </div>
   </body>
 </html>
