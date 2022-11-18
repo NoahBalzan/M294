@@ -15,7 +15,7 @@
             "name" : "Honda",
             "price" : 19800,
             "kraftstoff" : "Benzin",
-            "farbe" : "#000000",
+            "farbe" : "#00FFFF",
             "bauart" : "Bus",
             "tank" : 0,
             "date" : "2019-08-07"
@@ -25,7 +25,7 @@
             "name" : "Opel",
             "price" : 80200,
             "kraftstoff" : "Elektro",
-            "farbe" : "#000000",
+            "farbe" : "#CE2323",
             "bauart" : "SUV",
             "tank" : 0,
             "date" : "2019-08-07"

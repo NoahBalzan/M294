@@ -6,9 +6,16 @@ $(function () {
     console.log(id);
   }); */
 
+
+  var template = $('#template').html();
+  var hb_template = Handlebars.compile(template);
+
+
+  //JSON holen
   $.getJSON("data/daten.json",
     function (response) {
-        console.log(response);
+        //console.log(hb_template(response));
+        $('#datatable tbody').html(hb_template(response));
     }
   );
 

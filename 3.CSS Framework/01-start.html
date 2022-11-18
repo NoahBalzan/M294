@@ -37,6 +37,11 @@
     <script src="js/jQuery.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="js/materialize.min.js"></script>
+    <!--Handlebar-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
     <!--JS File-->
     <script src="js/index.js"></script>
 
@@ -68,6 +73,40 @@
       </div>
     </nav>
 
+    <!--Handlebar Template einbinden-->
+    <!--Somit kann der tbody ersetzt werden (bezeichnungen zwischen geschweiften Klammern == Bezeichnungen json Datei)-->
+    <script id="template" type="text/x-handlebars-template">
+      {{#each cars}}
+        <tr>
+          <!--Alternative: @key == 0, id == 1, this.id == 1, @index == 0-->
+          {{id}}{{this.id}}<!-- <td>{{@key}}---{{@index}}</td> -->
+          <td>{{id}}</td>
+          <td>{{name}}</td>
+          <td>{{kraftstoff}}</td>
+          <td><span
+              class="color"
+              style="background-color: {{farbe}}"
+            ></span>{{farbe}}</td>
+          <td>{{bauart}}</td>
+          <td>{{tank}}</td>
+          <td>{{date}}</td>
+          <td><span class="tank material-icons-outlined blue-text">
+              directions_car_filled
+            </span>
+            <span class="edit material-icons-outlined green-text"> edit </span>
+            <span class="delete material-icons-outlined red-text">
+              delete_forever
+            </span></td>
+        </tr>
+      {{/each}}
+
+      <!--  {{#cars}}
+            {{#.}}
+              {{name}} <br>
+            {{/.}}
+          {{/cars}} -->
+    </script>
+
     <table id="datatable" class="grey">
       <thead class="orange">
         <tr>
@@ -81,71 +120,7 @@
           <th>Action</th>
         </tr>
       </thead>
-      <tbody>
-        <tr data-id="1">
-          <td>1</td>
-          <td>Passat</td>
-          <td>Diesel</td>
-          <td>
-            <span class="color" style="background-color: #000000">-------</span>
-            #000000
-          </td>
-          <td>Limousine</td>
-          <td>0</td>
-          <td class="datepicker">2019-08-07</td>
-          <td>
-            <span class="tank material-icons-outlined blue-text">
-              directions_car_filled
-            </span>
-            <span class="edit material-icons-outlined green-text"> edit </span>
-            <span class="delete material-icons-outlined red-text">
-              delete_forever
-            </span>
-          </td>
-        </tr>
-        <tr data-id="2">
-          <td>2</td>
-          <td>Honda</td>
-          <td>Benzin</td>
-          <td>
-            <span class="color" style="background-color: #000000">-------</span>
-            #000000
-          </td>
-          <td>Bus</td>
-          <td>0</td>
-          <td class="datepicker">2019-08-07</td>
-          <td>
-            <span class="tank material-icons-outlined blue-text">
-              directions_car_filled
-            </span>
-            <span class="edit material-icons-outlined green-text"> edit </span>
-            <span class="delete material-icons-outlined red-text">
-              delete_forever
-            </span>
-          </td>
-        </tr>
-        <tr data-id="3">
-          <td>3</td>
-          <td>Opel</td>
-          <td>Elektro</td>
-          <td>
-            <span class="color" style="background-color: #000000">-------</span>
-            #000000
-          </td>
-          <td>SUV</td>
-          <td>0</td>
-          <td class="datepicker">2019-08-07</td>
-          <td>
-            <span class="tank material-icons-outlined blue-text">
-              directions_car_filled
-            </span>
-            <span class="edit material-icons-outlined green-text"> edit </span>
-            <span class="delete material-icons-outlined red-text">
-              delete_forever
-            </span>
-          </td>
-        </tr>
-      </tbody>
+      <tbody></tbody>
     </table>
 
     <p class="green lighten-4 red-text text-darken-3">Text</p>
