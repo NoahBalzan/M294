@@ -6,6 +6,12 @@ $(function () {
     console.log(id);
   }); */
 
+  $.getJSON("data/daten.json",
+    function (response) {
+        console.log(response);
+    }
+  );
+
   $("#datatable .tank").click(function (e) { 
     e.preventDefault();
     var id = $(this).parent().parent().attr("data-id");

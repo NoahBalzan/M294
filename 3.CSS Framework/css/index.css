@@ -36,3 +36,12 @@ body {
   font-family: "Dancing Script", cursive;
 }
 
+.rounded {
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+#add,
+#delete {
+  margin-right: 20px;
+}

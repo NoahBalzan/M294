@@ -32,7 +32,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/materialize.min.css" />
     <!--CSS File-->
-    <!-- <link rel="stylesheet" href="css/index.css" /> -->
+    <link rel="stylesheet" href="css/index.css" />
     <!--JQuery-->
     <script src="js/jQuery.js"></script>
     <!-- Compiled and minified JavaScript -->
@@ -46,6 +46,28 @@
     />
   </head>
   <body>
+    <nav class="blue-grey darken-3">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Autoverkauf</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <span
+              id="add"
+              class="material-icons-outlined green z-depth-2 rounded"
+              >add</span
+            >
+          </li>
+          <li>
+            <span
+              id="delete"
+              class="material-icons-outlined red z-depth-2 rounded"
+              >delete</span
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <table id="datatable" class="grey">
       <thead class="orange">
         <tr>
@@ -64,42 +86,63 @@
           <td>1</td>
           <td>Passat</td>
           <td>Diesel</td>
-          <td><span class="color" style="background-color: #000000;"> #000000</span></td>
+          <td>
+            <span class="color" style="background-color: #000000">-------</span>
+            #000000
+          </td>
           <td>Limousine</td>
           <td>0</td>
           <td class="datepicker">2019-08-07</td>
           <td>
-            <span class="tank material-icons-outlined blue-text"> directions_car_filled </span>
+            <span class="tank material-icons-outlined blue-text">
+              directions_car_filled
+            </span>
             <span class="edit material-icons-outlined green-text"> edit </span>
-            <span class="delete material-icons-outlined red-text"> delete_forever </span>
+            <span class="delete material-icons-outlined red-text">
+              delete_forever
+            </span>
           </td>
         </tr>
         <tr data-id="2">
           <td>2</td>
           <td>Honda</td>
           <td>Benzin</td>
-          <td><span class="color" style="background-color: #000000;"> #000000</span></td>
+          <td>
+            <span class="color" style="background-color: #000000">-------</span>
+            #000000
+          </td>
           <td>Bus</td>
           <td>0</td>
           <td class="datepicker">2019-08-07</td>
           <td>
-            <span class="tank material-icons-outlined blue-text"> directions_car_filled </span>
+            <span class="tank material-icons-outlined blue-text">
+              directions_car_filled
+            </span>
             <span class="edit material-icons-outlined green-text"> edit </span>
-            <span class="delete material-icons-outlined red-text"> delete_forever </span>
+            <span class="delete material-icons-outlined red-text">
+              delete_forever
+            </span>
           </td>
         </tr>
         <tr data-id="3">
           <td>3</td>
           <td>Opel</td>
           <td>Elektro</td>
-          <td><span class="color" style="background-color: #000000;"> #000000</span></td>
+          <td>
+            <span class="color" style="background-color: #000000">-------</span>
+            #000000
+          </td>
           <td>SUV</td>
           <td>0</td>
           <td class="datepicker">2019-08-07</td>
           <td>
-            <span class="tank material-icons-outlined blue-text"> directions_car_filled </span>
+            <span class="tank material-icons-outlined blue-text">
+              directions_car_filled
+            </span>
             <span class="edit material-icons-outlined green-text"> edit </span>
-            <span class="delete material-icons-outlined red-text"> delete_forever </span>
+            <span class="delete material-icons-outlined red-text">
+              delete_forever
+            </span>
           </td>
         </tr>
       </tbody>
