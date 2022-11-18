@@ -43,7 +43,7 @@
   <!--Colorpicker-->
   <div class="input-field col s6">
     <i class="material-icons prefix">account_circle</i>
-    <input id="color-picker" value='#276cb8' />
+    <input id="color-picker" value="#276cb8" />
     <label for="color">Farbe</label>
   </div>
 
@@ -217,22 +217,22 @@
     stroke: blue !important;
   }
 
-/*Checkbox*/
-[type="checkbox"]:checked+span:not(.lever):before{
+  /*Checkbox*/
+  [type="checkbox"]:checked + span:not(.lever):before {
     border-right: 2px solid blue !important;
     border-bottom: 2px solid blue !important;
-}
+  }
 
-[type="checkbox"].filled-in:checked+span:not(.lever):before{
+  [type="checkbox"].filled-in:checked + span:not(.lever):before {
     border-right: 2px solid #fff !important;
     border-bottom: 2px solid #fff !important;
-}
+  }
 
-[type="checkbox"].filled-in:checked+span:not(.lever):after{
+  [type="checkbox"].filled-in:checked + span:not(.lever):after {
     border: 2px solid blue !important;
     color: blue !important;
     background-color: blue !important;
-}
+  }
 
   /*Dropdown Content*/
   .dropdown-content li > a,
@@ -246,7 +246,9 @@
     background-color: blue !important;
   }
 
-  [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after{
+  [type="radio"]:checked + span:after,
+  [type="radio"].with-gap:checked + span:before,
+  [type="radio"].with-gap:checked + span:after {
     border: 2px solid blue !important;
   }
 </style>

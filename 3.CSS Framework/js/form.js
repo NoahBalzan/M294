@@ -23,7 +23,7 @@ $(".timepicker").timepicker();
 $('#color-picker').spectrum({
     type: "component"
   });
-  
+
 //Dropdown
 $('.dropdown-trigger').dropdown();
 
