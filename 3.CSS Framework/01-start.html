@@ -44,6 +44,9 @@
     ></script>
     <!--JS File-->
     <script src="js/index.js"></script>
+    <!--CDN Colorpicker-->
+    <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.css">
 
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
@@ -56,19 +59,21 @@
         <a href="#" class="brand-logo">Autoverkauf</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <span
-              id="add"
-              class="material-icons-outlined green z-depth-2 rounded"
-              >add</span
-            >
+            <a href="#modal1" class="modal-trigger">
+              <span
+                id="add"
+                class="material-icons-outlined green z-depth-2 rounded"
+                >add</span
+              >
+            </a>
           </li>
-          <li>
+          <!-- <li>
             <span
               id="delete"
               class="material-icons-outlined red z-depth-2 rounded"
               >delete</span
             >
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -76,8 +81,8 @@
     <!--Handlebar Template einbinden-->
     <!--Somit kann der tbody ersetzt werden (bezeichnungen zwischen geschweiften Klammern == Bezeichnungen json Datei)-->
     <script id="template" type="text/x-handlebars-template">
-      {{#each cars}}
-        <tr>
+      {{#each data}}
+        <tr data-id="{{id}}">
           <!--Alternative: @key == 0, id == 1, this.id == 1, @index == 0-->
           {{id}}{{this.id}}<!-- <td>{{@key}}---{{@index}}</td> -->
           <td>{{id}}</td>
@@ -107,8 +112,8 @@
           {{/cars}} -->
     </script>
 
-    <table id="datatable" class="grey">
-      <thead class="orange">
+    <table id="datatable" class="grey striped">
+      <thead class="indigo white-text">
         <tr>
           <th>ID</th>
           <th>Name</th>
@@ -123,6 +128,16 @@
       <tbody></tbody>
     </table>
 
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 id="mod_title"></h4>
+        <p id="mod_content">A bunch of text</p>
+      </div>
+    </div>
+
+    <!--Materialize Einleitung-->
+    <hr />
     <p class="green lighten-4 red-text text-darken-3">Text</p>
     <hr />
 
