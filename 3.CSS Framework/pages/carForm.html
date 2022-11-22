@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="css/carForm.css">
+
+<h1>Formular</h1>
+<div class="input-field col s12">
+    <input id="id" type="hidden" /> <!--type=hidden-->
+    <label for="id"></label>
+  </div>
+<hr />
+<div class="row">
+  <div class="input-field col s6">
+    <input id="name" type="text" />
+    <label for="name">Name</label>
+  </div>
+  <div class="input-field col s6">
+    <select id="kraftstoff">
+        <option value="" disabled selected></option>
+        <option value="Diesel">Diesel</option>
+        <option value="Benzin">Benzin</option>
+        <option value="Elektro">Elektro</option>
+      </select>
+    <label for="kraftstoff">Kraftstoff</label>
+  </div>
+  <div class="input-field col s6">
+    <input id="farbe" value="#276cb8" />
+    <label for="farbe"></label>
+  </div>
+  <div class="input-field col s6">
+    <select id="bauart">
+        <option value="" disabled selected></option>
+        <option value="PKW">PKW</option>
+        <option value="SUV">SUV</option>
+        <option value="Limousine">Limousine</option>
+        <option value="Sportwagen">Sportwagen</option>
+        <option value="Cabriolet">Cabriolet</option>
+      </select>
+    <label for="bauart">Bauart</label>
+  </div>
+  <div class="input-field col s6">
+    <input id="tanken" type="text" />
+    <label for="tanken">Tanken</label>
+  </div>
+  <div class="input-field col s6">
+    <input id="date" type="text" class="datepicker"/>
+    <label for="date">Datum</label>
+  </div>
+  <div class="input-field col s12">
+    <textarea id="textarea" class="materialize-textarea" type="text"></textarea>
+    <label for="textarea">Bemerkung</label>
+  </div>
+</div>
+
+<button id="save" class="btn green" type="submit">Speichern</button>

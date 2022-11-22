@@ -27,11 +27,14 @@ $('#color-picker').spectrum({
 //Dropdown
 $('.dropdown-trigger').dropdown();
 
+//Select
+
+
 //Feld lesen
-var read = $("#name").val();
-console.log(read);
+/* var read = $("#name").val();
+console.log(read); */
 
 //Feld schreiben
-$("#name").val("Text welcher geschrieben wird");
+/* $("#name").val("Text welcher geschrieben wird");
 $("#name").addClass("valid");
-M.updateTextFields();
+M.updateTextFields(); */

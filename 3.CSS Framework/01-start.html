@@ -46,7 +46,11 @@
     <script src="js/index.js"></script>
     <!--CDN Colorpicker-->
     <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
@@ -93,7 +97,7 @@
               style="background-color: {{farbe}}"
             ></span>{{farbe}}</td>
           <td>{{bauart}}</td>
-          <td>{{tank}}</td>
+          <td>{{tanken}}</td>
           <td>{{date}}</td>
           <td><span class="tank material-icons-outlined blue-text">
               directions_car_filled
@@ -159,5 +163,19 @@
       <div class="col s6 m4 l2 blue">7</div>
       <div class="col s6 m4 l2 grey">8</div>
     </div>
+
+    <a href="#modal1" class="modal-trigger">
+      <span
+        id="login"
+        class="material-icons-outlined green z-depth-2 rounded right"
+        >key</span
+      >
+    </a>
+
+    <span
+      id="logout"
+      class="material-icons-outlined blue z-depth-2 rounded right"
+      >exit_to_app</span
+    >
   </body>
 </html>
